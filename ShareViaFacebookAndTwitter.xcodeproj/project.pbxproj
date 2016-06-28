@@ -12,6 +12,8 @@
 		58D1E14E1D231B5D0097BC65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1E14C1D231B5D0097BC65 /* Main.storyboard */; };
 		58D1E1501D231B5D0097BC65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D1E14F1D231B5D0097BC65 /* Assets.xcassets */; };
 		58D1E1531D231B5D0097BC65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1E1511D231B5D0097BC65 /* LaunchScreen.storyboard */; };
+		58D1E15B1D231C8C0097BC65 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D1E15A1D231C8C0097BC65 /* Social.framework */; };
+		58D1E15D1D231DF00097BC65 /* worldmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58D1E15C1D231DF00097BC65 /* worldmap.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		58D1E14F1D231B5D0097BC65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D1E1521D231B5D0097BC65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D1E1541D231B5D0097BC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D1E15A1D231C8C0097BC65 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		58D1E15C1D231DF00097BC65 /* worldmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worldmap.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D1E15B1D231C8C0097BC65 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		58D1E13C1D231B5C0097BC65 = {
 			isa = PBXGroup;
 			children = (
+				58D1E15A1D231C8C0097BC65 /* Social.framework */,
 				58D1E1471D231B5D0097BC65 /* ShareViaFacebookAndTwitter */,
 				58D1E1461D231B5C0097BC65 /* Products */,
 			);
@@ -54,6 +60,7 @@
 		58D1E1471D231B5D0097BC65 /* ShareViaFacebookAndTwitter */ = {
 			isa = PBXGroup;
 			children = (
+				58D1E15C1D231DF00097BC65 /* worldmap.jpg */,
 				58D1E1481D231B5D0097BC65 /* AppDelegate.swift */,
 				58D1E14A1D231B5D0097BC65 /* ViewController.swift */,
 				58D1E14C1D231B5D0097BC65 /* Main.storyboard */,
@@ -123,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D1E1531D231B5D0097BC65 /* LaunchScreen.storyboard in Resources */,
+				58D1E15D1D231DF00097BC65 /* worldmap.jpg in Resources */,
 				58D1E1501D231B5D0097BC65 /* Assets.xcassets in Resources */,
 				58D1E14E1D231B5D0097BC65 /* Main.storyboard in Resources */,
 			);

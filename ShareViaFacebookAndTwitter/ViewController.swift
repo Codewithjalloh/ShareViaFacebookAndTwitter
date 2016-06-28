@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Social
+import Accounts
 
 class ViewController: UIViewController {
 
@@ -21,10 +23,50 @@ class ViewController: UIViewController {
     }
     
     @IBAction func facebookButton(sender: AnyObject) {
+        let url: NSURL = NSURL(string: "https://www.github.com/")!
+        
+        let fbController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        fbController.setInitialText("")
+        fbController.addURL(url)
+        
+        let completionHandler = {(result: SLComposeViewControllerResult) -> () in
+            switch (result) {
+            case .Cancelled:
+                print("User canceled", terminator: "")
+            case .Done:
+                print("User posted", terminator: "")
+            }
+        }
+        
+        fbController.completionHandler = completionHandler
+        self.presentViewController(fbController, animated: true, completion: nil)
     }
     
     
     @IBAction func twitterButton(sender: AnyObject) {
+        let worldMapImage = UIImage(named: "worldmap.jpg")!
+        
+        let twController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        twController.setInitialText("")
+        twController.addImage(worldMapImage)
+        
+        
+        let completionHandler = {(result: SLComposeViewControllerResult) -> () in
+            switch (result) {
+            case .Cancelled:
+                print("User canceled", terminator: "")
+            case .Done:
+                print("User posted", terminator: "")
+            }
+        }
+        
+        twController.completionHandler = completionHandler
+        self.presentViewController(twController, animated: true, completion: nil)
+        
+        
+        
+        
+        
     }
 
 
